@@ -1,17 +1,22 @@
 package com.sofka.ddd.domain.generics;
 
-import co.com.sofka.domain.generic.Identity;
+import java.util.Objects;
 
-public class IdHojaDeVida extends Identity {
-    private IdHojaDeVida(String value){
-        super(value);
+import co.com.sofka.domain.generic.ValueObject;
+
+public class IdHojaDeVida implements ValueObject<String> {
+
+    private final String value;
+
+    public IdHojaDeVida(String value) {
+        this.value = Objects.requireNonNull(value, "El id de la hoja de vida no puede ir vacio");
+        if(this.value.isBlank()){
+            throw new IllegalArgumentException("El id de la hoja de vida no puede estar en blanco");
+        }
     }
 
-    public IdHojaDeVida(){
-
-    }
-
-    public static IdHojaDeVida of(String value){
-        return new IdHojaDeVida(value);
+    @Override
+    public String value() {
+        return value;
     }
 }
