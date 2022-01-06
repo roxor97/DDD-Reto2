@@ -15,11 +15,11 @@ public class CrearGestionEducacion  extends Command {
         this.idHojaDeVida = idHojaDeVida;
     }
 
-    public IdGestionEducacion getGestionEducacionId() {
+    public IdGestionEducacion getIdGestionEducacion() {
         return idGestionEducacion;
     }
 
-    public IdHojaDeVida getHojaDeVidaId() {
+    public IdHojaDeVida getIdHojaDeVida() {
         return idHojaDeVida;
     }
 }

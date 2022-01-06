@@ -18,11 +18,11 @@ public class ModificarTipoDeEducacion extends Command {
         this.tipo = tipo;
     }
 
-    public IdGestionEducacion getGestionEducacionId() {
+    public IdGestionEducacion getIdGestionEducacion() {
         return idGestionEducacion;
     }
 
-    public IdEducacion getEducacionId() {
+    public IdEducacion getIdEducacion() {
         return idEducacion;
     }
 

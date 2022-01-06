@@ -30,11 +30,11 @@ public class AgregarNuevaEducacion extends Command {
         this.periodo = periodo;
     }
 
-    public IdGestionEducacion  getIdGestionEduIdGestionEducacion () {
+    public IdGestionEducacion  getIdGestionEducacion () {
         return idGestionEducacion ;
     }
 
-    public IdEducacion getEducacionId() {
+    public IdEducacion getIdEducacion() {
         return idEducacion;
     }
 
