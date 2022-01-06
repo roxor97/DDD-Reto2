@@ -7,7 +7,7 @@ import co.com.sofka.business.generic.UseCase;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.business.support.ResponseEvents;
 
-public class UseCaseCrearExperienciaLaboral extends UseCase<RequestCommand<CrearExperienciaLaboral>, ResponseEvents> {
+public class CrearExperienciaLaboralUseCase extends UseCase<RequestCommand<CrearExperienciaLaboral>, ResponseEvents> {
 
     @Override
     public void executeUseCase(RequestCommand<CrearExperienciaLaboral> requestCommand) {

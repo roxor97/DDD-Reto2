@@ -19,4 +19,8 @@ public class IdHojaDeVida implements ValueObject<String> {
     public String value() {
         return value;
     }
+
+    public static IdHojaDeVida of(String value) {
+        return new IdHojaDeVida(value);
+    }
 }

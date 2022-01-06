@@ -11,7 +11,7 @@ import co.com.sofka.business.generic.UseCase;
 import co.com.sofka.business.support.ResponseEvents;
 import co.com.sofka.business.support.TriggeredEvent;
 
-public class UseCaseNotificarPerfilCreado extends UseCase<TriggeredEvent<PerfilCreado>, ResponseEvents> {
+public class NotificarPerfilCreadoUseCase extends UseCase<TriggeredEvent<PerfilCreado>, ResponseEvents> {
     @Override
     public void executeUseCase(TriggeredEvent<PerfilCreado> triggeredEvent){
         var event = triggeredEvent.getDomainEvent();

@@ -7,7 +7,7 @@ import co.com.sofka.business.generic.UseCase;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.business.support.ResponseEvents;
 
-public class UseCaseAgregarExperienciaLaboral extends UseCase<RequestCommand<AgregarExperienciaLaboral>, ResponseEvents> {
+public class AgregarExperienciaLaboralUseCase extends UseCase<RequestCommand<AgregarExperienciaLaboral>, ResponseEvents> {
     @Override
     public void executeUseCase(RequestCommand<AgregarExperienciaLaboral> requestCommand) {
         var command = requestCommand.getCommand();

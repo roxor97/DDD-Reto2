@@ -10,7 +10,7 @@ import co.com.sofka.business.generic.UseCase;
 import co.com.sofka.business.support.ResponseEvents;
 import co.com.sofka.business.support.TriggeredEvent;
 
-public class UseCaseNotificarExperienciaCreada extends UseCase<TriggeredEvent<ExperienciaCreada>, ResponseEvents> {
+public class NotificarExperienciaCreadaUseCase extends UseCase<TriggeredEvent<ExperienciaCreada>, ResponseEvents> {
     @Override
     public void executeUseCase(TriggeredEvent<ExperienciaCreada> triggeredEvent){
         var event = triggeredEvent.getDomainEvent();

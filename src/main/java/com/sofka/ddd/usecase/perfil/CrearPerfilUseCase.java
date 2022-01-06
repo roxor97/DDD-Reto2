@@ -8,7 +8,7 @@ import co.com.sofka.business.generic.UseCase;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.business.support.ResponseEvents;
 
-public class UseCaseCrearPerfil extends UseCase<RequestCommand<CrearPerfil>, ResponseEvents> {
+public class CrearPerfilUseCase extends UseCase<RequestCommand<CrearPerfil>, ResponseEvents> {
     @Override
     public void executeUseCase(RequestCommand<CrearPerfil> requestCommand){
         var command = requestCommand.getCommand();

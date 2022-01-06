@@ -12,7 +12,7 @@ import co.com.sofka.business.generic.UseCase;
 import co.com.sofka.business.support.ResponseEvents;
 import co.com.sofka.business.support.TriggeredEvent;
 
-public class UseCaseCalucularExperienciaLaboral extends UseCase<TriggeredEvent<ExperienciaCreada>, ResponseEvents> {
+public class CalucularExperienciaLaboralUseCase extends UseCase<TriggeredEvent<ExperienciaCreada>, ResponseEvents> {
     @Override
     public void executeUseCase(TriggeredEvent<ExperienciaCreada> triggeredEvent){
         var event = triggeredEvent.getDomainEvent();
