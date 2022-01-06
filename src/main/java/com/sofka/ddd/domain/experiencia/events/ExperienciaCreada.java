@@ -4,6 +4,7 @@ import java.util.Set;
 
 import com.sofka.ddd.domain.experiencia.ExperienciaLaboral;
 import com.sofka.ddd.domain.generics.IdHojaDeVida;
+import com.sofka.ddd.domain.generics.Periodo;
 
 import co.com.sofka.domain.generic.DomainEvent;
 
@@ -23,5 +24,8 @@ public class ExperienciaCreada extends DomainEvent {
 
     public IdHojaDeVida getIdHojaDeVida() {
         return idHojaDeVida;
+    }
+    public Periodo getPeriodo() {
+        return experienciaLaboral.iterator().next().periodo();
     }
 }
